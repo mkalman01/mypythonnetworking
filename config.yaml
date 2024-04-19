@@ -1,0 +1,16 @@
+---
+inventory:
+  plugin: SimpleInventory
+  options:
+    host_file: "/home/sysadmin/Documents/switchingautomation/inventory/hosts.yaml"
+    group_file: "/home/sysadmin/Documents/switchingautomation/inventory/groups.yaml"
+    defaults_file: "/home/sysadmin/Documents/switchingautomation/inventory/defaults.yaml"
+runner:
+  plugin: threaded
+  options:
+    num_workers: 100
+
+netmiko:
+  extras:
+    textfsm_templates:
+      - "/templates/show_interface_status.textfsm"

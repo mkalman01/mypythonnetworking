@@ -1,0 +1,8 @@
+conf t
+interface fastEthernet0/1
+shutdown
+interface fastEthernet0/2
+shutdown
+description This is a port
+interface fastEthernet0/3
+switchport access vlan 100

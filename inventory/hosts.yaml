@@ -1,0 +1,14 @@
+---
+CORESW1:
+  hostname: x.x.x.x
+  groups:
+    - access_switch
+
+AccessSW1:
+  hostname: x.x.x.x
+  groups:
+    - access_switch
+  connection_options:
+    netmiko:
+      extras:
+        secret: secretpassword
